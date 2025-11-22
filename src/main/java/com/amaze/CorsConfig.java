@@ -1,0 +1,22 @@
+package com.amaze;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.*;
+
+@Configuration
+public class CorsConfig {
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**") // allow all routes
+                        .allowedOrigins("http://localhost:3000") // allow frontend
+                        .allowedMethods("*") // allow GET, POST, PUT, DELETE, etc.
+                        .allowedHeaders("*") // allow all headers
+                        .allowCredentials(true); // allow cookies/sessions
+            }
+        };
+    }
+}
