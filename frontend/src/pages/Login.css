@@ -1,0 +1,75 @@
+/* Login.css */
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background: #f9f9f9;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 90%;
+}
+
+.login-card h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #333;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card label {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+.login-card input {
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.login-card input:focus {
+    outline: none;
+    border-color: #4d90fe;
+}
+
+.login-card button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    background-color: #4d90fe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.login-card button:hover {
+    background-color: #357ae8;
+}
+
+.error-msg {
+    margin-top: 1rem;
+    color: #d8000c;
+    background-color: #ffd2d2;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}

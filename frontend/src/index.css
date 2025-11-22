@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0.3rem;
+  transition: 0.3s;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+/* Hero / Welcome Section */
+.hero-section {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Section Headings */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #343a40;
+}
+
+/* Departments Section */
+.departments-section {
+  padding: 60px 0;
+}
+
+.department-card {
+  border: none;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Doctors Section */
+.doctors-section {
+  padding: 60px 0;
+}
+
+.doctor-card {
+  border: none;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.doctor-card:hover {
+  transform: scale(1.05);
+}
+
+.doctor-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: -1;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url('/public/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, select {
+  border-radius: 10px !important;
+  padding: 10px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+}
